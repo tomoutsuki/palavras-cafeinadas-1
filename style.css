@@ -1,3 +1,37 @@
-h1 {
-    color: #226ED8
+/*
+Unect Main Color Code:
+・#226ED8
+・#1F64C5
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    padding: 20px 0;
+    background-color: #57290B;
+}
+
+header .headline {
+    font-size: 32px;
+    color: #226ED8;
+}
+
+.nax-list {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.nav-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
 }
