@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="utf-8">
     <title>Este é o início de tudo!</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
 </head>
 
 <body>
-    <header>
-        <div id="header-bg"></div>
-        <h1 class="headline">
-            <a>Titulo do Site</a>
-        </h1>
-
-    <ul class="nav-list">
-        <li class="nav-list-item">
-            <a>HOME</a>
-        </li>
-        <li class="nav-list-item">About</li>
-        <li class="nav-list-item">Topic</li>
-    </ul>
+    <header class="header">
+        <div class="header__inner">
+            <nav class="header__nav" id="js-nav">
+                <ul class="nav__items">
+                    <li class="nav-items__item"><a href="#">Sobre nós</a></li>
+                    <li class="nav-items__item"><a href="#">Serviços</a></li>
+                    <li class="nav-items__logo">
+                        <a href="#">
+                            <img src="assets/logo_dark.svg" alt="logo" class="logo_dark"/>
+                            <h1 class="logo_dark_text">Palavras Cafeinadas</h1>
+                        </a>
+                    </li>
+                    <li class="nav-items__item"><a href="#">Contato</a></li>
+                    <li class="nav-items__item"><a>19-991256972</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <!--<strong>Este é o primeiro passo do projeto!</strong></br>
-    <h1>A efetivação já está logo aí na frente!</h1>-->
+
+    <main>
+        <div class="content">
+            Este é o conteúdo principal do site!
+        </div>
+    </main>
 </body>
+
 </html>

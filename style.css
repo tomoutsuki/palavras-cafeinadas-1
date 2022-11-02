@@ -2,36 +2,103 @@
 Unect Main Color Code:
 ・#226ED8
 ・#1F64C5
+
+・Header BG: #57290B
 */
-*{
-    margin: 0;
-    padding: 0;
+* {
+    color: inherit;
+    text-decoration: none;
+} 
+
+main {
+    background-color: #FFF;
+    height: 24rem;
+    display: flex;
 }
 
-header {
-    position: absolute;
-    width: 1440px;
+.main {
+    margin: auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
     height: 100px;
     left: 0px;
     top: 0px;
+    right: 0;
 
-    padding: 20px 0;
-    background-color: #57290B;
+    z-index: 4;
+
+    background: #57290B;
 }
 
-header .headline {
-    font-size: 32px;
-    color: #226ED8;
+.header__inner {
+    display: grid;
+    margin-left: 4.8rem;
+    margin-right: 6rem;
+    align-items: center;
 }
 
-.nax-list {
+.nav__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.25fr 1fr 1fr;
+
+    height: initial;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-items__logo {
+    display: block;
+    width: 8rem;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_dark {
+    width: 2.7rem;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_dark_text {
+    width: 8.75rem;
+    margin-top: 0.5rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding: 10px 0;
-    margin: 0 auto;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #EBDACC;
 }
 
-.nav-list-item {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
+.nav-items__item {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #EBDACC;
 }
