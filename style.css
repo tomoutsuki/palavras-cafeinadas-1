@@ -24,7 +24,7 @@ header .headline {
     color: #226ED8;
 }
 
-.nax-list {
+.nav-list {
     text-align: center;
     padding: 10px 0;
     margin: 0 auto;
@@ -39,11 +39,58 @@ header .headline {
 
 footer {
 
-position: absolute;
-width: 1440px;
-height: 402px;
-left: 0px;
-top: 2117px;
+    position: absolute;
+    width: 1440px;
+    height: 402px;
+    left: 0px;
+    top: 2117px;
+    
+    background: #57290B;
 
-background: #57290B;
+    
+    }
+
+footer .footer{
+
+font-size: 32px;
+line-height: 39px;
+
+color: #EBDACC;
+}
+
+
+.f-nav-list {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.footer-nav-list{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+
+    color: #EBDACC;
+}
+
+
+
+.fim-nav-list{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+color: #FFDAB8;
 }
