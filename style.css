@@ -3,11 +3,16 @@ Unect Main Color Code:
 ・#226ED8
 ・#1F64C5
 */
-*{
-    margin: 0;
-    padding: 0;
+main {
+    background-color: #FFF;
+    height: 24rem;
+    display: flex;
 }
 
+.main {
+    margin: auto;
+}
+/*
 header {
     position: absolute;
     width: 1440px;
@@ -36,6 +41,7 @@ header .headline {
     margin: 0 20px;
 }
 
+*/
 
 footer {
 
@@ -44,53 +50,48 @@ footer {
     height: 402px;
     left: 0px;
     top: 2117px;
-    
     background: #57290B;
 
-    
-    }
-
-footer .footer{
-
-font-size: 32px;
-line-height: 39px;
-
-color: #EBDACC;
 }
 
 
-.f-nav-list {
-    text-align: center;
-    padding: 10px 0;
-    margin: 0 auto;
+ .footer{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 4fr    
 }
 
-.footer-nav-list{
-    font-family: 'Open Sans';
+
+.container-footer{
+
+    max-width: 1400px;
+    padding: 0 4% ;
+    margin: auto
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer-cafe h4{
+
+    width: 246px;
+    height: 39px;
+    left: 120px;
+    top: 2336px;
+
+    font-family: 'Cormorant Garamond';
     font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 33px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
 
-
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
 
     color: #EBDACC;
-}
+    }
 
-
-
-.fim-nav-list{
-    font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-/* identical to box height */
-
-letter-spacing: 0.05em;
-
-color: #FFDAB8;
+.footer-fim{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
 }
