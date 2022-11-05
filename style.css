@@ -8,16 +8,6 @@ Unect Main Color Code:
 * {
     color: inherit;
     text-decoration: none;
-} 
-
-main {
-    background-color: #FFF;
-    height: 24rem;
-    display: flex;
-}
-
-.main {
-    margin: auto;
 }
 
 .header {
@@ -26,7 +16,7 @@ main {
     height: 100px;
     left: 0px;
     top: 0px;
-    right: 0;
+    right: 0px;
 
     z-index: 4;
 
@@ -51,12 +41,51 @@ main {
     margin-right: auto;
 }
 
+.header_selectable::after {
+    display: flex;
+    content: "";
+
+    width: 3rem;
+    height: 0.1rem;
+    background-color: #B2784A;
+    left: 50%;
+    margin-left: -1.5rem;
+    margin-top: 2rem;
+
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    border-radius: 0.1rem;
+}
+
 .nav-items__logo {
     display: block;
     width: 8rem;
     height: 6rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+.nav-items__phone_number {
+    display: grid;
+    width: 8rem;
+
+    gap: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: inline-block;
+}
+
+.header_menu_rectangle {
+    width: 3rem;
+    height: 0.1rem;
+    background-color: #B2784A;
+    margin-top: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 0.1rem;
 }
 
 .logo_dark {
@@ -101,4 +130,167 @@ main {
     line-height: 22px;
 
     color: #EBDACC;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F3ED;
+}
+
+main {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+.banner_background {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    height: 32rem;
+}
+
+.banner_background_image {
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.banner_background_gradient {
+    background: radial-gradient(80.87% 481.72% at 15.17% 35.76%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.54) 51.88%, rgba(0, 0, 0, 0.24) 100%);
+    z-index: -1;
+}
+
+.banner_content {
+    position: absolute;
+    display: grid;
+    margin-left: 6rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+
+    width: 35rem;
+    color: #F0F0F0;
+}
+
+.banner_content h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 76px;
+}
+
+.banner_content p {
+    margin-top: 1rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;
+    gap: 27px;
+
+    width: 283px;
+    height: 57px;
+
+    background: #8F542E;
+    border-radius: 8px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 33px;
+
+    letter-spacing: 0.03em;
+
+    color: #F0F0F0;
+
+}
+
+.button_banner {
+    margin-top: 2rem;
+}
+
+.about_us_content {
+    position: absolute;
+    margin-top: 36rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+
+    grid-template-columns: 2.5fr 1fr;
+    width: auto;
+    height: 30rem;
+    
+    display: grid;
+}
+
+.about_us_rectangle {
+    position: absolute;
+    width: 16rem;
+    height: 1.8rem;
+
+    margin-top: -1.8rem;
+    margin-left: -1.25rem;
+    background-color: #FBC9A8;
+
+    z-index: -1;
+}
+
+.about_us_content h1 {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #1F0C00;
+}
+
+.about_us_content p {
+    position: relative;
+    width: 36rem;
+    margin-top: 2rem;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1F0C00;
+}
+
+.about_us_image {
+    margin-top: 5rem;
+
+    width: 18rem;
+    height: 16rem;
+
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.button_about_us {
+    margin-top: 0rem;
+}
+
+.transition_background_image {
+    position: absolute;
+    margin-top: 65rem;
 }

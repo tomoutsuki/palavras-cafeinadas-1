@@ -6,7 +6,7 @@
     <title>Este é o início de tudo!</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond|Open Sans">
 </head>
 
 <body>
@@ -14,16 +14,34 @@
         <div class="header__inner">
             <nav class="header__nav" id="js-nav">
                 <ul class="nav__items">
-                    <li class="nav-items__item"><a href="#">Sobre nós</a></li>
-                    <li class="nav-items__item"><a href="#">Serviços</a></li>
+
+                    <li class="nav-items__item header_selectable">
+                        <a href="#">
+                            Sobre nós
+                        </a>
+                    </li>
+
+                    <li class="nav-items__item header_selectable">
+                        <a href="#">
+                            Serviços
+                        </a>
+                    </li>
+
                     <li class="nav-items__logo">
                         <a href="#">
                             <img src="assets/logo_dark.svg" alt="logo" class="logo_dark"/>
                             <h1 class="logo_dark_text">Palavras Cafeinadas</h1>
                         </a>
                     </li>
-                    <li class="nav-items__item"><a href="#">Contato</a></li>
-                    <li class="nav-items__item"><a>19-991256972</a></li>
+                    <li class="nav-items__item header_selectable">
+                        <a href="#">
+                            Contato
+                        </a>
+                    </li>
+                    <li class="nav-items__item nav-items__phone_number">
+                        <img src="assets/phone_icon.svg" alt="phone_icon" class="header_phone_icon">
+                        19-991256972
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -31,7 +49,27 @@
 
     <main>
         <div class="content">
-            Este é o conteúdo principal do site!
+            <img src="assets/nathan-dumlao-KixfBEdyp64-unsplash.jpeg" alt="bg" class="banner_background banner_background_image"/>
+            <div class="banner_background banner_background_gradient"></div>
+            <section class="banner_content">
+                <h1>Leia acompanhado de uma culinária de qualidade</h1>
+                <p>Aonde a paixão por livros e o amor por café sempre tem lugar á mesa.</p>
+                <button type="button" class="button button_banner">Venha conhecer →</button>
+            </section>
+            <section class="about_us_content">
+                <div class="about_us_text">
+                    <h1>Sobre nós</h1>
+                    <div class="about_us_rectangle"></div>
+                    <p>A principal proposta da Cafeteria Palavras Cafeinadas é oferecer um espaço aconchegante, contendo um ambiente moderno e um atendimento completo, nela é possível provar refeições saborosas e ler excelentes livros.</p>
+                    <p>O sonho de Carlina era criar um espaço aonde pudesse unir seu amor por culinária e a enorme paixão por literatura, venha saber mais dessa jornada:</p>
+                </div>
+                <img src="assets/nathan-dumlao-pMW4jzELQCw-unsplash.jpeg" alt="round_table_coffee" class="about_us_image"/>
+                <button type="button" class="button button_about_us">Venha conhecer →</button>
+            </section>
+            <img src="assets/Cafe onda.svg" alt="coffee_wave" class="transition_background_image" />
+            <section>
+                
+            </section>
         </div>
     </main>
 </body>
