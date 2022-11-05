@@ -77,17 +77,6 @@ Unect Main Color Code:
     display: inline-block;
 }
 
-.header_menu_rectangle {
-    width: 3rem;
-    height: 0.1rem;
-    background-color: #B2784A;
-    margin-top: 0.1rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    border-radius: 0.1rem;
-}
-
 .logo_dark {
     width: 2.7rem;
     height: auto;
@@ -214,6 +203,7 @@ main {
     font-size: 18px;
     line-height: 33px;
 
+    text-transform: uppercase;
     letter-spacing: 0.03em;
 
     color: #F0F0F0;
@@ -237,18 +227,6 @@ main {
     display: grid;
 }
 
-.about_us_rectangle {
-    position: absolute;
-    width: 16rem;
-    height: 1.8rem;
-
-    margin-top: -1.8rem;
-    margin-left: -1.25rem;
-    background-color: #FBC9A8;
-
-    z-index: -1;
-}
-
 .about_us_content h1 {
     font-family: 'Cormorant Garamond';
     font-style: normal;
@@ -260,6 +238,20 @@ main {
     text-transform: uppercase;
 
     color: #1F0C00;
+}
+
+.about_us_content h1::after {
+    display: flex;
+    content: "";
+
+    width: 16rem;
+    height: 1.8rem;
+    background-color: #FBC9A8;
+    margin-left: -1.3rem;
+    margin-top: -1.8rem;
+
+    z-index: -1;
+    position: absolute;
 }
 
 .about_us_content p {
