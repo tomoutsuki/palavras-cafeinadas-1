@@ -3,35 +3,44 @@ Unect Main Color Code:
 ・#226ED8
 ・#1F64C5
 */
+
 * {
     color:inherit;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    background-color: #FFF;
-    height: 24rem;
-    display: flex;
+    main {
+        background-color: #FFF;
+        height: 24rem;
+        display: flex;
     }
     .main {
     margin: auto;
     }
+
     footer {
     position: absolute;
-    width: 1349px;
+    width: 100%;
     height: 402px;
     left: 0px;
     top: 2117px;
     background: #57290B;
+    height: auto;
     }
-    
+
 
     .container-footer{
-    max-width: 1400px;
+    max-width: 1349px;
     padding: 0 4% ;
-    margin: auto
+    margin: auto;
+    display: flex;
     }
+
 
     .row-footer{
     display: flex;
@@ -40,7 +49,8 @@ main {
     }
     .footer-logo{
         list-style: none;
-        padding: 20px 40px 0px 0px;
+        padding: 30px 40px 0px 30px;
+        margin-right: 90px;
     }
     
     .footer-logo h4{
@@ -58,17 +68,20 @@ main {
         padding: 0px 30px 0px 60px ;
     }
     
-    .footer-coluna{
-     font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    color: #EBDACC;
-    }
-
-    .footer-contato h4{
-        font-family: 'Opens Sans';
+    .footer-contato{
+        font-family: 'Open Sans';
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        display: inline-block;
+        width: 25%;
+
+    }
+   
+    .titulo{
+        font-family: 'Open Sans';
+        font-style: normal;
         font-size: 24px;
         line-height: 33px;
         color: #EBDACC;
@@ -87,14 +100,58 @@ main {
         padding: 10px 0px 0px 0px;
 
     }
+    
+    .footer-itens{
+        margin-right: 40px;
+    }
+    
+    .footer-item{
+        display: inline-block;
+        width: 300%;
+        height: 5px;
+        margin-left: 5px;
+    }
+
+    .item_fone img{
+        display: inline-block; 
+        margin-bottom: -5px;
+
+    }
+
+    .footer-contato li{
+        margin-bottom: 40px;
+    }
+
+    .item_email img{
+        display: inline-block;
+        margin-bottom: -5px;
+    }
+    .item_endereco img{
+        display: inline-block;
+        margin-bottom: -5px;
+        
+    }
+
+  
+
+    .item_instagram img{
+        display: inline-block;
+        margin-bottom: -5px;
+    }
+    .item_facebook img{
+        display: inline-block;
+        margin-bottom: -10px;
+    }
+
+  
   
     .retangulo{
     list-style: none;
     background: #A76E42;
     height: 2px;
     padding: 0px 0px 0px 0px;
-    margin-bottom: 10px;
-    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-top: 40px;
     }
     
     .footer-fim{
@@ -103,34 +160,25 @@ main {
         
     }
 
-    .footer-contato{
-        font-family: 'Opens Sans';
-        font-size: 40;
-        font-weight: 100;
-        color: #EBDACC;
-        margin-left: 35px;
-
-    }
-
+    
     .footer-fim ul{
         display: flex;
         flex-wrap: wrap;
         padding: 10px 0px 0px 0px;
     }
     .fim-list-1{
-        padding: 0px 750px 0px 50px;  
-        margin-top: 20px;  
+        padding: 10px 750px 20px 50px;  
+        margin-top: 0px;  
     }
     .fim-list{
-        margin-top: 20px;
+        padding-bottom: 30px ;  
     }
 
- .footer-img{
-    padding: 15px 0px 0px 40px;
+ .footer-img li{
+    padding: 15px 0px 0px 10px;
     margin-bottom: 0px;
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-right: 0px;
  }
 
- .footer-d{
-    padding: 0px 0px 0px 0px;
- }
+ 
