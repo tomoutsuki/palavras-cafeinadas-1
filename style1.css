@@ -10,14 +10,33 @@ body {
     width: 100%;
     height: 100%;
     background-color: #F5F3ED;
+    
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+    margin-top: 100px;
+    margin-left: 0px;
 }
 
 h1{
 
     font-family: 'Cormorant Garamond';
     font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 107px;
+    /* identical to box height */
+
+    padding: auto;
+    text-align:  center;  
+    color: #57290B;
 
  }
+
+
 
  h3{
     font-family: 'Cormorant Garamond';
@@ -41,7 +60,6 @@ h1{
  }
 
  
-
  .banner{
 
     flex: 1 100%;
@@ -51,37 +69,25 @@ h1{
     height: 35rem;
  }
 
- .banner_h1{
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 88px;
-    line-height: 107px;
-/* identical to box height */
-    color: #57290B;
-    margin: auto;
- }
 
  .banner_components{
     display: flex;
     justify-content: space-between;
-    padding: 0px;
+    
    
  }
- .banner_components > div
-{
-    flex: 1 1 200px;
 
-}
  .banner_detalhe_dir{
-    padding: 0px;
+    max-width: 800px;
+    margin-left: 0px;
+    margin-bottom: 0px;
  }
 
  .banner_detalhe_esq{
     padding: 0%;
  }
 
- .livraria h2{
+  h2{
     font-family: 'Cormorant Garamond';
     font-style: normal;
     font-weight: 700;
@@ -97,10 +103,21 @@ h1{
 
  .livraria{
     top: 657px;
+    width: 100%;
     left: 0px;
     right: 0px;
     background: #F0F0F0;
     
+ }
+
+ .livraria h3::after {
+
+    content: '';
+    width: 220px;
+    height: 2px;
+    background: #B2784A;
+    display: block;
+    margin: 5px auto;
  }
 .livraria_components h4{
     font-family: 'Open Sans';
@@ -137,9 +154,6 @@ h1{
     
 }
 
-.livraria_subtitle{
-    margin: 0 auto;
-}
 
 .livraria_components p{
     font-family: 'Open Sans';
@@ -187,17 +201,24 @@ h1{
     left: 0px;
     right: 0px;
     background: #80451F;
+    height: 624px;
+    width: 1440px;
+    margin-left: 0px;
     
 }
-.cafeteria h3{
-    padding: 50px;
+.cafeteria h3::after{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background:  #B2784A;
+    display: block;
+    margin: 0 auto;
+
 }
 .cafeteria img{
     border-radius: 5px;
-    padding: 5px;
-    margin-left: 39px;
+  
 }
-
 .cafeteria_title{
     margin: 0 auto;
     margin-top: -90px;
@@ -205,11 +226,9 @@ h1{
 
  .cafeteria_components{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-left: 10px;
     margin-right: 100px
-
-    
     
  }
 
@@ -232,19 +251,35 @@ h1{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* or 129% */
-
     letter-spacing: 0.02em;
-
     color: #1F0C00;
  }
 
-
+.cafeteria_components img{
+    object-fit: cover;
+    width: calc(100%);
+}
  
+.cafeteria_components > div {
+    padding: 10px;
+}
 
  .orcamento{
-    width: 1441px;
-    height: 886px;
+
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+   
+ }
+
+
+
+ .orcamento h2{
+    width: 452px;
+height: 56px;
  }
 
 
@@ -254,6 +289,7 @@ h1{
     border-radius: 8px;
     width: 587px;
     height: 70px;
+    margin-left: 123px;
     
  }
  .form2{
@@ -262,7 +298,7 @@ h1{
     border-radius: 8px;
     width: 587px;
     height: 220px;
-    
+    margin-left: 123px;
  }
 
  .form_orcamento p {
@@ -271,12 +307,10 @@ h1{
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-/* identical to box height, or 125% */
-
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
     color: #1F0C00;
+    margin-left: 123px;
   
  }
 
@@ -285,7 +319,10 @@ h1{
     border: #8F542E;
     border-radius: 8px;
     width: 282px;
-    height: 57px
+    height: 57px;
+    margin-left: 125px;
+    margin-top: 32px;
+
  }
 
  .button_orcamento h4{
@@ -294,32 +331,28 @@ h1{
     font-weight: 800;
     font-size: 18px;
     line-height: 33px;
-    /* identical to box height, or 183% */
-
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: #F0F0F0;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-left: 0px;
+    margin-top: 10px;
+ }
+ .button_orcamento img{
+    margin: 200px;
  }
 
  .botao{
     margin-top: auto;
-    margin-bottom: 20px;
-    margin-left: 180px;
+    margin-bottom: 70px;
  }
  
- .doce img{
-    border-radius: 8px;
+ .orcamento_doce img{
+    border-radius: 8px; 
  }
 
+ .orcamento_doce{
+   margin-top: 65px;
+  
+ }
 
 .header {
     position: fixed;
