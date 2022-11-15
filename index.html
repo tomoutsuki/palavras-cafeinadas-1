@@ -1,27 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="utf-8">
-    <title>Este é o início de tudo!</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div id="header-bg"></div>
-        <h1 class="headline">
-            <a>Titulo do Site</a>
-        </h1>
+    <header class="header">
+        <div class="header__inner">
+            <nav class="header__nav" id="js-nav">
+                <ul class="nav__items">
 
-    <ul class="nav-list">
-        <li class="nav-list-item">
-            <a>HOME</a>
-        </li>
-        <li class="nav-list-item">About</li>
-        <li class="nav-list-item">Topic</li>
-    </ul>
+                    <li class="nav-items__item header_selectable">
+                        <a href="#">
+                            Sobre nós
+                        </a>
+                    </li>
+
+                    <li class="nav-items__item header_selectable">
+                        <a href="#">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li class="nav-items__logo">
+                        <a href="#">
+                            <img src="assets/header_logo_dark.svg" alt="logo" class="logo_dark"/>
+                            <h1 class="logo_dark_text">Palavras Cafeinadas</h1>
+                        </a>
+                    </li>
+                    <li class="nav-items__item header_selectable">
+                        <a href="#">
+                            Contato
+                        </a>
+                    </li>
+                    <li class="nav-items__item nav-items__phone_number">
+                        <img src="assets/header_phone_icon.svg" alt="phone_icon" class="header_phone_icon">
+                        19-991256972
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <!--<strong>Este é o primeiro passo do projeto!</strong></br>
-    <h1>A efetivação já está logo aí na frente!</h1>-->
+
+    <main>
+        <div class="content">
+            <section class="banner">
+                <div class="banner_content">
+                    <h1>Leia acompanhado de uma culinária de qualidade</h1>
+                    <p>Aonde a paixão por livros e o amor por café sempre tem lugar á mesa.</p>
+                    <button type="button" class="button button_banner">Venha conhecer →</button>
+                </div>
+            </section>
+
+            <section class="about_us">
+                <div class="about_us_content">
+                    <h1>Sobre nós</h1>
+                    <p>A principal proposta da Cafeteria Palavras Cafeinadas é oferecer um espaço aconchegante, contendo um ambiente moderno e um atendimento completo, nela é possível provar refeições saborosas e ler excelentes livros.</p>
+                    <p>O sonho de Carlina era criar um espaço aonde pudesse unir seu amor por culinária e a enorme paixão por literatura, venha saber mais dessa jornada:</p>
+                    <button type="button" class="button button_about_us">
+                        Nossa Jornada →
+                    </button>
+                </div>
+            </section>
+
+            <div class="about_us_image_div">
+                <img src="assets/nathan-dumlao-pMW4jzELQCw-unsplash.jpeg" alt="round_table_coffee" class="about_us_image"/>
+            </div>
+
+            <img src="assets/cafe_onda.svg" alt="coffee_wave" class="transition_background_image" />
+            
+            <section class="service">
+                <div class="service_content">
+                    <h1>Venha se apaixonar</h1>
+                </div>
+                <div class="service_image_container">
+                    <img src="assets/service_livraria.png" alt="service_livraria" class="service_livraria service_image" />
+
+                    <img src="assets/service_cafeteria.png" alt="service_cafeteria" class="service_cafeteria service_image" />
+                </div>
+                
+                <div class="service_button_div">
+                    <button>Nossos Serviços</button>
+                </div>
+            </section>
+
+            <footer> 
+                <div class = "container-footer line-footer">
+                    <div class = "row-footer ">
+                        <div class = "footer-logo">
+                                <img src="assets/coffee.svg" alt="coffee"> 
+                                <h4>Palavras Cafeinadas</h4>
+                        </div>
+    
+                        <div class ="footer-contato">
+                            <h4 class="titulo">CONTATO</h4> 
+                            <ul class ="footer-itens"></ul>             
+                                <li class ="footer-item item_fone"><img src="assets/fone.svg" alt="email"> 19-991256972</li> 
+                                <li class ="footer-item item_email"><img src="assets/email.svg" alt="email"> contato@gmail.com</li>
+                                <li class ="footer-item item_endereco"> <img src="assets/endereco.svg" alt="endereco">  Av. Paulista, 1324 - Bela <br>    
+                                Vista , São Paulo - SP <br>, 01310-100</li> 
+                            </ul>
+                        </div> 
+    
+                        <div class = "footer-contato">
+                            <h4 class="titulo">REDES SOCIAIS</h4> 
+                            <ul class ="footer-itens">
+                                <li class ="footer-item item_instagram"><img src="assets/instagram.svg" alt="instagram"> @palavrascafeinadas</li>  
+                                <li class ="footer-item item_facebook"><img src="assets/facebook.svg" alt="facebook"> Palavras Cafeinadas </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "footer-fim">
+                        <p class="footer-fim-right">Desenvolvido por Unect Jr</p>
+                        <p class="footer-fim-left">Todos os direitos reservados ©︎</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </main>
 </body>
+
 </html>
