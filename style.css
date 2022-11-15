@@ -3,6 +3,12 @@
     text-decoration: none;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F3ED;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -112,12 +118,6 @@
     line-height: 22px;
 
     color: #EBDACC;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    background-color: #F5F3ED;
 }
 
 main {
@@ -291,7 +291,7 @@ main {
 
 .service {
     width: 110%;
-    height: 80rem;
+    height: 62rem;
     background-color: #80451F;
 
     flex: 1 100%;
@@ -376,6 +376,161 @@ main {
     text-transform: uppercase;
 
     color: #1F0C00;
+}
 
+footer {
+    width: 100%;
+    height: 25rem;
+    left: 0px;
+    background: #57290B;
 
+    flex: 1 100%;
+}
+
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    padding: 0 4%;
+    height: 25rem;
+}
+
+.container-footer::after {
+    display: flex;
+    content: "";
+
+    width: 88%;
+    height: 0.2rem;
+    background-color: #A76E42;
+    left: 50%;
+    margin-left: -44%;
+    margin-top: 20rem;
+
+    z-index: 4;
+    position: absolute;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo{
+    list-style: none;
+    padding: 30px 40px 0px 30px;
+    margin-right: 90px;
+}
+    
+.footer-logo h4{
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #EBDACC;
+    padding: 0px 0px 0px 0px ; 
+    margin-top: 10px;
+}
+
+.footer-logo li{
+    list-style: none;
+    padding: 0px 30px 0px 60px ;
+}
+
+.footer-contato{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: inline-block;
+    width: 25%;
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+   
+h4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #EBDACC;
+    padding: 10px 0px 20px 0px;
+    margin-top: 20px;
+}
+
+.footer-contato li{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #EBDACC;
+    padding: 10px 0px 0px 0px;
+}
+    
+.footer-itens{
+    margin-right: 40px;
+}
+    
+.footer-item{
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    margin-left: 5px;
+}
+
+.item_fone img{
+    display: inline-block; 
+    margin-bottom: -5px;
+}
+
+.footer-contato li{
+    margin-bottom: 40px;
+}
+
+.item_email img{
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.item_endereco img{
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+li{
+    text-align: justify;
+}
+
+.item_instagram img{
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.item_facebook img{
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+.footer-fim {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    flex: 1 100%;
+
+    display: flex;
+    margin-top: 5rem;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    letter-spacing: 0.05em;
+    color: #FFDAB8;
+
+    justify-content: space-between;
 }
