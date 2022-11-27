@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="contact_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
@@ -33,13 +33,13 @@
                     </li>
 
                     <li class="nav-items__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="assets/header_logo_dark.svg" alt="logo" class="logo_dark"/>
                             <h1 class="logo_dark_text">Palavras Cafeinadas</h1>
                         </a>
                     </li>
                     <li class="nav-items__item header_selectable">
-                        <a href="contact.html">
+                        <a href="#">
                             Contato
                         </a>
                     </li>
@@ -54,43 +54,53 @@
 
     <main>
         <div class="content">
-            <section class="banner">
-                <div class="banner_content">
-                    <h1>Leia acompanhado de uma culinária de qualidade</h1>
-                    <p>Aonde a paixão por livros e o amor por café sempre tem lugar á mesa.</p>
-                    <button type="button" class="button button_banner">Venha conhecer →</button>
-                </div>
-            </section>
+            <section class="contact">
+                <h1>Entre em contato</h1>
 
-            <section class="about_us">
-                <div class="about_us_content">
-                    <h1>Sobre nós</h1>
-                    <p>A principal proposta da Cafeteria Palavras Cafeinadas é oferecer um espaço aconchegante, contendo um ambiente moderno e um atendimento completo, nela é possível provar refeições saborosas e ler excelentes livros.</p>
-                    <p>O sonho de Carlina era criar um espaço aonde pudesse unir seu amor por culinária e a enorme paixão por literatura, venha saber mais dessa jornada:</p>
-                    <button type="button" class="button button_about_us">
-                        Nossa Jornada →
-                    </button>
-                </div>
-            </section>
+                <div class="contact_content">
+                    <div class="contact_overview">
+                        <div class="contact_overview_main">
+                            <p><img src="assets/fone.svg" alt="phone_icon">19-991256972
+                            </p>
+                            <p><img src="assets/email.svg" alt="email_icon">contato@gmail.com
+                            </p>
+                            <p><img src="assets/endereco.svg" alt="adress_icon">Av. Paulista, 1324 - Bela<br>
+                            Vista, São Paulo - SP,<br>
+                            01310-100
+                            </p>
+                        </div>
+                        <div class="contact_overview_sns">
+                            <p><img src="assets/instagram.svg" alt="instagram_icon">@palavrascafeinadas
+                            </p>
+                            <p><img src="assets/facebook.svg" alt="facebook_icon">Palavras Cafeinadas
+                            </p>
+                        </div>
+                        <div class="contact_overview_logo">
+                            <img src="assets/contact_logo_white.svg" alt="logo">
+                            <p>Palavras Cafeinadas</p>
+                        </div>
+                    </div>
 
-            <div class="about_us_image_div">
-                <img src="assets/nathan-dumlao-pMW4jzELQCw-unsplash.jpeg" alt="round_table_coffee" class="about_us_image"/>
-            </div>
+                    <div class="contact_forms">
+                        <div class="contact_forms_group">
+                            <label for="contact_name">Nome</label><br>
+                            <input type="text" id="contact_name" name="contact_name">
+                        </div>
 
-            <img src="assets/cafe_onda.svg" alt="coffee_wave" class="transition_background_image" />
-            
-            <section class="service">
-                <div class="service_content">
-                    <h1>Venha se apaixonar</h1>
-                </div>
-                <div class="service_image_container">
-                    <img src="assets/service_livraria.png" alt="service_livraria" class="service_livraria service_image" />
+                        <div class="contact_forms_group">
+                            <label for="contact_email">Email</label><br>
+                            <input type="text" id="contact_email" name="contact_email">
+                        </div>
 
-                    <img src="assets/service_cafeteria.png" alt="service_cafeteria" class="service_cafeteria service_image" />
-                </div>
-                
-                <div class="service_button_div">
-                    <button>Nossos Serviços</button>
+                        <div class="contact_forms_group">
+                            <label for="contact_message">Mensagem</label><br>
+                            <input type="text" id="contact_message" name="contact_message">
+                        </div>
+
+                        <button type="button" class="button button_about_us">
+                            Enviar Mensagem →
+                        </button>
+                    </div>
                 </div>
             </section>
 

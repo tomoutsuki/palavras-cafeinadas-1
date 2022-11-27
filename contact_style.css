@@ -117,7 +117,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #F5F3ED;
+    background: #F0F0F0;
 }
 
 main {
@@ -132,45 +132,6 @@ main {
 .content {
     display: flex;
     flex-wrap: wrap;
-}
-
-.banner {
-    flex: 1 100%;
-    pointer-events: none;
-    width: 100%;
-    top: 100px;
-    height: 35rem;
-
-    background: radial-gradient(80.87% 481.72% at 15.17% 35.76%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.54) 51.88%, rgba(0, 0, 0, 0.24) 100%), url(assets/yianni-mathioudakis-ueOilE1blwQ-unsplash.jpeg) center/cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-.banner_content {
-    width: 100%;
-    height: 35rem;
-    
-    z-index: 4;
-    color: #F0F0F0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.banner h1 {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 88px;
-    line-height: 107px;
-
-    color: #EBDACC;
-    text-transform: uppercase;
-
-    text-align: center;
-    align-content: center;
 }
 
 .button {
@@ -200,97 +161,15 @@ main {
 
 }
 
-.about_us {
-    width: 22rem;
-    height: 40rem;
-    flex: 1.3;
-}
-
-.about_us_content {
-    margin-top: 3rem;
-    margin-left: 6rem;
-
-    display: block;
+.contact {
     width: 100%;
-    height: 30rem;
-    
+    height: 60rem;
+    flex: 1;
+    margin-top: 2rem;
+    margin-left: 4rem;
 }
 
-.about_us_content h1 {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 56px;
-
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-
-    margin-top: 3.5rem;
-    margin-bottom: 2.5rem;
-    color: #1F0C00;
-}
-
-.about_us_content h1::after {
-    display: flex;
-    content: "";
-
-    width: 20rem;
-    height: 1.8rem;
-    background-color: #FBC9A8;
-    margin-left: -1rem;
-    margin-top: -1.8rem;
-
-    z-index: -1;
-    position: absolute;
-}
-
-.about_us_content p {
-    width: 36rem;
-    margin-bottom: 1.2rem;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-
-    color: #1F0C00;
-}
-
-.about_us_image_div {
-    display: flex;
-    height: 40rem;
-    margin-right: 5rem;
-}
-
-.about_us_image {
-    margin-top: 8rem;
-    width: 28rem;
-    height: 28rem;
-
-    object-fit: cover;
-    border-radius: 0.5rem;
-
-}
-
-
-.team {
-    width: 110%;
-    height: auto;
-    background-color: #80451F;
-
-    flex: 1 100%;
-    padding-bottom: 3rem;
-}
-
-.team_content {
-    margin-top: 7.5%;
-}
-
-.team_content h1 {
-    text-align: center;
-
+.contact h1 {
     font-family: 'Cormorant Garamond';
     font-style: normal;
     font-weight: 700;
@@ -300,108 +179,160 @@ main {
     letter-spacing: 0.02em;
     text-transform: uppercase;
 
-    color: #F5F3ED;
+    color: #1F0C00;
 }
 
-.team_content h1::after {
+.contact h1::after {
     display: flex;
-    position: fixed;
     content: "";
 
-    width: 12rem;
-    height: 0.2rem;
-    background-color: #B2784A;
-    left: +50%;
-    margin-left: -6rem;
-    margin-top: 0.25rem;
+    width: 28rem;
+    height: 1.6rem;
+    background-color: #FBC9A8;
+    margin-left: -1.0rem;
+    margin-top: -1.5rem;
 
-    text-align: center;
+    z-index: -1;
     position: absolute;
-    border-radius: 0.1rem;
 }
 
-.team_member_list {
-    margin-top: 4rem;
+.contact_content {
+    width: 80%;
+    height: 50rem;
 
     display: flex;
     flex-wrap: wrap;
 
-    gap: 2rem;
-
-    margin-left: 12rem;
-    margin-right: 12rem;
-}
-
-.team_member {
-    flex: 1 100%;
-
-    background: #F5F3ED;
-    border-radius: 8px;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 2rem;
-    padding: 2rem;
-    box-shadow: 0px 3px 2px rgba(31, 12, 0, 0.1);
-}
-
-.team_member_photo {
-    flex: 1;
+    margin-top: 3rem;
+    margin-left: 6rem;
     
-    width: 14rem;
-    height: 13rem;
-    object-fit: cover;
+    border-radius: 8px;
+    background-color: #8F542E;
 }
 
-.team_member_text {
-    flex: 4;
+.contact_overview {
+    flex: 3;
+    margin-top: 1.5rem;
+}
+
+.contact_overview img {
+    display: inline-block;
+    vertical-align: middle;
+    filter: saturate(20%) brightness(180%);
+    margin-right: 0.5rem;
+}
+
+.contact_overview p {
+    margin-top: 1.2rem;
+    margin-left: 2.2rem;
+
     font-family: 'Open Sans';
     font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
 
-    margin-right: 24%;
-    color: #1F0C00;
 
+    color: #EBDACC;
+}
+
+.contact_overview_main {
+    margin-bottom: 3rem;
+}
+
+.contact_overview_main::after {
     display: flex;
+    content: "";
+
+    width: 21.75rem;
+    height: 0.2rem;
+    background-color: #B2784A;
+    margin-left: 2.2rem;
+    margin-top: 1rem;
+}
+
+.contact_overview_logo {
+    margin-top: 10rem;
+    display: flex;
+    
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.team_member_text h2 {
-    margin-top: 1.5rem;
+.contact_overview_logo img {
+    width: 10rem;
+    height: 10rem;
+
+    margin-right: 3rem;
+    margin-bottom: 0.6rem;
+
+    flex: 1 100%;
+}
+
+.contact_overview_logo p {
+    margin: 0;
+    margin-right: 3rem;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    text-align: center;
+
+    color: #EBDACC;
+    flex: 1 100%;
+}
+
+.contact_forms {
+    flex: 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    background-color: #F5F3ED;
+    border-radius: 0 8px 8px 0;
+    padding: 2.2rem;
+}
+
+.contact_forms label {
+    font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 
     letter-spacing: 0.02em;
-    width: 30%;
-    flex: 1 100%;
+    text-transform: capitalize;
+
+    color: #1F0C00;
 }
 
-.team_member_text h2::after {
-    margin-top: 0.10rem;
-
-    display: flex;
-    position: fixed;
-    content: "";
-
-    width: 15%;
-    height: 0.2rem;
-    background-color: #B2784A;
-
-    z-index: 1;
-    text-align: center;
-    position: absolute;
-    border-radius: 0.1rem;
-
+.contact_forms_group {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.team_member_text p {
-    margin-top: 2rem;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+.contact_forms_group input {
+    background: #F5F5F5;
+    border: 1px solid #8F542E;
+    border-radius: 8px;
 
-    flex: 1 100%;
+    width: 100%;
+}
+
+#contact_name,
+#contact_email {
+    height: 4.375rem;
+}
+#contact_message {
+    height: 13.75rem;
+}
+
+.contact_forms button {
+    margin-top: 1.5rem;
 }
 
 footer {
