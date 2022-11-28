@@ -420,6 +420,11 @@ footer {
     list-style: none;
     padding: 30px 40px 0px 30px;
     margin-right: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
     
 .footer-logo h4{
@@ -430,6 +435,8 @@ footer {
     color: #EBDACC;
     padding: 0px 0px 0px 0px ; 
     margin-top: 10px;
+
+    flex: 1 100%;
 }
 
 .footer-logo li{

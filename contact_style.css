@@ -377,6 +377,11 @@ footer {
     list-style: none;
     padding: 30px 40px 0px 30px;
     margin-right: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
     
 .footer-logo h4{
@@ -408,7 +413,7 @@ footer {
     max-width: 100%;
 }
    
-h4{
+footer h4{
     font-family: 'Open Sans';
     font-style: normal;
     font-size: 24px;
