@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style1.css">  
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond|Open Sans">
-   <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="servicos_style.css">  
+    
+   <title>Serviços</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,54 +55,50 @@
     </header>
 
     <main class="container">
-        
         <section class="banner">
 
             <h1>SERVIÇOS</h1>
             <div class="banner_components">
-                <img src="imagens/detalhe_livro1.png" >
-                <img src="imagens/detalhe_livro2.png" >
+                <img src="assets/decoration_book_L.png" >
+                <img src="assets/decoration_book_R.png" >
             </div>
 
         </section>
 
-        <section class="livraria">
-            <div class="livraria_components">
-                
-                <div class="livraria_text">
-                    <h2 class="livraria_title">LIVRARIA</h2>
-                    <h3 class="livraria_subtitle">Os mais vendidos</h3>
-                </div>
-                    
-                <div class="livros_1">
-                    <div>
-                        <img src="imagens/historia_Sem_fim.svg" alt="">
-                        <h4>A história sem fim</h4>
+        <section class="library">
+            <div class="library_components">
+                <h2>Livraria</h2>
+                <h3>Os mais vendidos</h3>
+                <div class="library_book_sheft">
+                    <div class="library_book_block library_line_1">
+                        <img src="assets/book_a_historia_sem_fim.png" alt="a_historia_sem_fim">
+                        <h4>A História Sem Fim</h4>
                         <p>Michael Ende</p>
                     </div>
 
-                    <div>
-                        <img src="imagens/torto_arado.svg" alt="">
+                    <div class="library_book_block library_line_1">
+                        <img src="assets/book_torto_arado.png" alt="torto_arado">
                         <h4>Torto Arado</h4>
-                        <p>itamar vieira junior</p>
+                        <p>Itamar Vieira Junior</p>
                     </div>
 
-                    <div>
-                        <img src="imagens/rapido_divagar.svg" alt="">
-                        <h4>Rápido e Divagar</h4>
+                    <div class="library_book_block library_line_1">
+                        <img src="assets/book_rapido_e_devagar.png" alt="rapido_e_devagar">
+                        <h4>Rápido e Devagar</h4>
                         <p>Daniel kahneman</p>
                     </div>
-                </div>
 
-                <div class="livros_2">
-                    <div>
-                        <img src="imagens/1984.svg" alt="">
+                    <div class="flex_break pc_only"></div>
+
+                    <div class="library_book_block library_line_2">
+                        <img src="assets/book_1984.png" alt="1984">
                         <h4>1984</h4>
                         <p>George Orwell</p>
                     </div>
-                    <div>
-                        <img src="imagens/milagre_da_manha.svg" alt="">
-                        <h4>O milagre da manha</h4>
+
+                    <div class="library_book_block library_line_2">
+                        <img src="assets/book_o_milagre_da_manha.png" alt="o_milagre_da_manha">
+                        <h4>O Milagre da Manhã</h4>
                         <p>Michael Ende</p>
                     </div>
                 </div>
@@ -103,74 +106,106 @@
         </section>
 
 
-            <section class="cafeteria">
-                <h3>CAFETERIA</h3>
-                <div class="cafeteria_components">
-                        <div class="brigadeiro">
-                            <div class="brigadeiro">
-                                <img src="imagens/brigadeiro.png" alt="">
-                            </div>
-                            <h4>Brigadeiro De Cappuccino</h4>
-        
-                            <p>O brigadeiro de cappuccino é uma das <br> guloseimas que enfeitam o balcão da <br> doceria...</p>
-                        </div>
-                      
-                        <div class="biscoito">
-                            <img src="imagens/ginger_bread.svg" alt="">
-                            <h4>Pão de Mel</h4>
-                            <p>O pão de mel é um dos doces mais <br> tradicionais que temos, ele é recheado com <br> doce de leite</p>
-                        </div>
-        
-                        <div class="bolo_De_chocolate">
-                            <img src="imagens/bolo_choc.png" alt="">
-                            <h4>Bolo De Chocolate</h4>
-                            <p>O bolo de chocolate é uma das sobremesas <br> mais pedidas da Cafeteria, ele possui um <br> recheio com...</p>
-                        </div>
-        
-                        <div class="sorvete_De_cafe">
-                            <img src="imagens/sorvete.svg" alt="">
-                            <h4>Sorvete De Café</h4>
-                            <p>O sorvete em versão de café pode ser aproveitado <br> sozinho ou com um pedacinho de <br> bolo no fim...</p>
-                        </div>
-        
-                        <div class="sorvete_De_cafe">
-                            <img src="imagens/sorvete.svg" alt="">
-                            <h4>Sorvete De Café</h4>
-                            <p>O sorvete em versão de café pode ser aproveitado <br> sozinho ou com um pedacinho de br bolo no fim...</p>
-                            <p class="leia_mais">Leia Mais</p>
-                        </div>
-                   
+        <section class="cafeteria">
+            <h3>Cafeteria</h3>
+            <div class="cafeteria_components">
+
+                <div class="sweet_box brigadeiro">
+                    <div class="brigadeiro">
+                        <img src="assets/sweets_brigadeiro.png" alt="">
+                    </div>
+                    <h4>Brigadeiro De Cappuccino</h4>
+                    <p>O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</p>
                 </div>
-               
-            </section>
-
-
-            <section class="orcamento">
-
-                <div class="orcamento_div">
-
-                    <h2>FAÇA UM ORÇAMENTO</h1>
-                        <div class="form_orcamento">
-                            <p>Nome</p>
-                            <input type="text" name="nome" class="form" >
-                            <p>E-Mail</p>
-                            <input type="text" name="email" class="form">
-                            <p>Mensagem</p>
-                            <input type="text" name="mensagem" class="form2">
-
-                            <a href="#"><img src="imagens/enviar_mensagem.png"></a>
-                           
-                        </div>   
-                   
+                    
+                <div class="sweet_box ginger_bread">
+                    <img src="assets/sweets_ginger_bread.png" alt="">
+                    <h4>Pão de Mel</h4>
+                    <p>O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite</p>
                 </div>
-   
-                        <div class="orcamento_doce">
-                            <img src="imagens/doces.png" alt="">
-                        </div>
-        </section>
-    </main>
-
-
     
+                <div class="sweet_box chocolate_cake">
+                    <img src="assets/sweets_chocolate_cake.png" alt="">
+                    <h4>Bolo De Chocolate</h4>
+                    <p>O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteria, ele possui um recheio com...</p>
+                </div>
+    
+                <div class="sweet_box coffee_ice">
+                    <img src="assets/sweets_coffee_ice.png" alt="">
+                    <h4>Sorvete De Café</h4>
+                    <p>O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...</p>
+                </div>
+    
+                <div class="sweet_box choco_cappuchino">
+                    <img src="assets/sweets_choco_cappuchino.png" alt="">
+                    <h4>Cappuchino</h4>
+                    <p>O Cappuchino tem seu toque extravagante, com perfeita harmonia entre canela, chocolate e outros...</p>
+                </div>
+                
+            </div>
+            
+        </section>
+
+
+        <section class="budget">
+            <div class="budget_content">
+                <h2>Faça um Orçamento</h2>
+                <div class="budget_forms_group">
+                    <label for="budget_name">Nome</label><br>
+                    <input type="text" id="budget_name" name="budget_name">
+                </div>
+
+                <div class="budget_forms_group">
+                    <label for="budget_email">Email</label><br>
+                    <input type="text" id="budget_email" name="budget_email">
+                </div>
+
+                <div class="budget_forms_group">
+                    <label for="budget_message">Mensagem</label><br>
+                    <input type="text" id="budget_message" name="budget_message">
+                </div>
+
+                <button type="button" class="button button_budget">
+                    Enviar Mensagem →
+                </button>
+            </div>
+        </section>
+        <img src="assets/sweets_general.png" alt="food" class="general_food_image">
+
+        <footer> 
+            <div class = "container-footer line-footer">
+                <div class = "row-footer ">
+                    <div class = "footer-logo">
+                            <img src="assets/coffee.svg" alt="coffee"> 
+                            <h4>Palavras Cafeinadas</h4>
+                    </div>
+
+                    <div class ="footer-contato">
+                        <h4 class="titulo">CONTATO</h4> 
+                        <ul class ="footer-itens"></ul>             
+                            <li class ="footer-item item_fone"><img src="assets/fone.svg" alt="email"> 19-991256972</li> 
+                            <li class ="footer-item item_email"><img src="assets/email.svg" alt="email"> contato@gmail.com</li>
+                            <li class ="footer-item item_endereco"> <img src="assets/endereco.svg" alt="endereco">  Av. Paulista, 1324 - Bela <br>    
+                            Vista , São Paulo - SP <br>, 01310-100</li> 
+                        </ul>
+                    </div> 
+
+                    <div class = "footer-contato">
+                        <h4 class="titulo">REDES SOCIAIS</h4> 
+                        <ul class ="footer-itens">
+                            <li class ="footer-item item_instagram"><img src="assets/instagram.svg" alt="instagram"> @palavrascafeinadas</li>  
+                            <li class ="footer-item item_facebook"><img src="assets/facebook.svg" alt="facebook"> Palavras Cafeinadas </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class = "footer-fim">
+                    <p class="footer-fim-right">Desenvolvido por Unect Jr</p>
+                    <p class="footer-fim-left">Todos os direitos reservados ©︎</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
 </body>
 </html>
