@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Home</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index_style.css">
@@ -12,10 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="menubar.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header pc_only">
         <div class="header__inner">
             <nav class="header__nav" id="js-nav">
                 <ul class="nav__items">
@@ -52,8 +56,25 @@
         </div>
     </header>
 
+    <header class="mobile_header mobile_only">
+        <div class="mobile_header_bar">
+            <a href="#" class="logo">
+                <img src="assets/header_logo_dark.svg" alt="logo"/>
+                <h1>Palavras Cafeinadas</h1>
+            </a>
+            <a href="javascript:void(0);" class="menubar" onclick="switchMenu()">
+                <img src="assets/icon_menubar.svg" alt="menubar">
+            </a>
+        </div>
+    </header>
+
     <main>
         <div class="content">
+            <section id="mobile_header_menu">
+                <a href="about_us.html">Sobre Nós</a>
+                <a href="service.html">Serviços</a>
+                <a href="contact.html">Contato</a>
+            </section>
             <section class="banner">
                 <div class="banner_content">
                     <h1>Leia acompanhado de uma culinária de qualidade</h1>
@@ -73,8 +94,8 @@
                 </div>
             </section>
 
-            <div class="about_us_image_div">
-                <img src="assets/nathan-dumlao-pMW4jzELQCw-unsplash.jpeg" alt="round_table_coffee" class="about_us_image"/>
+            <div class="about_us_image_div pc_only">
+                <img src="assets/nathan-dumlao-pMW4jzELQCw-unsplash.jpeg" alt="round_table_coffee" class="about_us_image pc_only"/>
             </div>
 
             <img src="assets/cafe_onda.svg" alt="coffee_wave" class="transition_background_image" />
@@ -89,15 +110,15 @@
                     <img src="assets/service_cafeteria.png" alt="service_cafeteria" class="service_cafeteria service_image" />
                 </div>
                 
-                <div class="service_button_div">
+                <div class="service_button_div pc_only">
                     <button>Nossos Serviços</button>
                 </div>
             </section>
 
             <footer> 
                 <div class = "container-footer line-footer">
-                    <div class = "row-footer ">
-                        <div class = "footer-logo">
+                    <div class = "row-footer">
+                        <div class = "footer-logo pc_only">
                                 <img src="assets/coffee.svg" alt="coffee"> 
                                 <h4>Palavras Cafeinadas</h4>
                         </div>

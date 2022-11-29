@@ -15,18 +15,22 @@ O mesmo trata-se de um Projeto de Capacitação de Trainees da empresa júnior U
 
 
 ### ≫ Descrição <a name="Description"></a>
-Este projeto utiliza o HTML, CSS e Node.js, e é totalmente responsivo para o dispositivo mobile ou tablets.
+Este projeto é composto por HTML, CSS e JavaScript, e é parcialmente responsivo para o dispositivo mobile ou tablets.
 
 ### ≫ Feature <a name="Feature"></a>
-- [ ] Main Page
-- [ ] About Us
-- [ ] Services
-- [ ] Contact Us
+- [x] Main Page
+- [x] About Us
+- [x] Services
+- [x] Contact Us
 
-- [ ] Responsive
+- [x] Responsive MainPage
+- [ ] Responsive About Us
+- [ ] Responsive Services
+- [ ] Contact Us
 
 
 ### ≫ Responsividade <a name="Responsive"></a>
+O website é optimizado para telas Desktop ou Notebook (acima de 748px), e dispositivos smartphones (abaixo de 748px).
 
 ### ≫ Direitos <a name="Rights"></a>
 Copyright © 2022 de Unect Jr.
